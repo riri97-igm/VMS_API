@@ -1,0 +1,11 @@
+D:\OJT\VMS\VMS.API\VMS.Model\bin\Debug\net8.0\VMS.Model.deps.json
+D:\OJT\VMS\VMS.API\VMS.Model\bin\Debug\net8.0\VMS.Model.dll
+D:\OJT\VMS\VMS.API\VMS.Model\bin\Debug\net8.0\VMS.Model.pdb
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.AssemblyInfoInputs.cache
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.AssemblyInfo.cs
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.csproj.CoreCompileInputs.cache
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.dll
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\refint\VMS.Model.dll
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.pdb
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\ref\VMS.Model.dll

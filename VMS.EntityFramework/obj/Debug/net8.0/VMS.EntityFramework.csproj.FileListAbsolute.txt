@@ -1,0 +1,17 @@
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\bin\Debug\net8.0\VMS.EntityFramework.deps.json
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\bin\Debug\net8.0\VMS.EntityFramework.runtimeconfig.json
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\bin\Debug\net8.0\VMS.EntityFramework.dll
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\bin\Debug\net8.0\VMS.EntityFramework.pdb
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\bin\Debug\net8.0\VMS.Common.dll
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\bin\Debug\net8.0\VMS.Common.pdb
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.csproj.AssemblyReference.cache
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.GeneratedMSBuildEditorConfig.editorconfig
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.AssemblyInfoInputs.cache
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.AssemblyInfo.cs
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.csproj.CoreCompileInputs.cache
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.csproj.CopyComplete
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.dll
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\refint\VMS.EntityFramework.dll
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.pdb
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.genruntimeconfig.cache
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\ref\VMS.EntityFramework.dll
