@@ -999,6 +999,9 @@
         }
       },
       "VMS.Model/1.0.0": {
+        "dependencies": {
+          "VMS.Common": "1.0.0"
+        },
         "runtime": {
           "VMS.Model.dll": {}
         }

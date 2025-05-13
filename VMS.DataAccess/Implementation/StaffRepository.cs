@@ -27,6 +27,7 @@ namespace VMS.DataAccess.Implementation
             {
                 var staffs = await _context.Staffs
                     .Include(s => s.Department)
+                    .Include(s => s.Role)
                     .ToListAsync();
                 return staffs.Select(StaffConverter.ToStaffDetailDTO);
             }
@@ -41,6 +42,7 @@ namespace VMS.DataAccess.Implementation
         {
             var staff = await _context.Staffs
                 .Include(s => s.Department)
+                .Include(s => s.Role)
                 .FirstOrDefaultAsync(s => s.Id == id);
 
             return staff != null ? StaffConverter.ToStaffDetailDTO(staff) : null;
@@ -76,6 +78,7 @@ namespace VMS.DataAccess.Implementation
             staff.Email = staffDto.Email;
             staff.Phone = staffDto.Phone;
             staff.DepartmentId = staffDto.DepartmetId;
+            staff.RoleId = staffDto.RoleId;
             await _context.SaveChangesAsync();
 
             return true;

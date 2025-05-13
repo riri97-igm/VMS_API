@@ -9,3 +9,8 @@ D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.dll
 D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\refint\VMS.Model.dll
 D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.pdb
 D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\ref\VMS.Model.dll
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.sourcelink.json
+D:\OJT\VMS\VMS.API\VMS.Model\bin\Debug\net8.0\VMS.Common.dll
+D:\OJT\VMS\VMS.API\VMS.Model\bin\Debug\net8.0\VMS.Common.pdb
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.csproj.AssemblyReference.cache
+D:\OJT\VMS\VMS.API\VMS.Model\obj\Debug\net8.0\VMS.Model.csproj.CopyComplete

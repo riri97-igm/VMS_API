@@ -17,3 +17,4 @@ D:\OJT\VMS\VMS.API\VMS.Converter\obj\Debug\net8.0\VMS.Converter.dll
 D:\OJT\VMS\VMS.API\VMS.Converter\obj\Debug\net8.0\refint\VMS.Converter.dll
 D:\OJT\VMS\VMS.API\VMS.Converter\obj\Debug\net8.0\VMS.Converter.pdb
 D:\OJT\VMS\VMS.API\VMS.Converter\obj\Debug\net8.0\ref\VMS.Converter.dll
+D:\OJT\VMS\VMS.API\VMS.Converter\obj\Debug\net8.0\VMS.Converter.sourcelink.json

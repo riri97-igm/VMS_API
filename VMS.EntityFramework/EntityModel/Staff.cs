@@ -14,5 +14,7 @@ namespace VMS.EntityFramework.EntityModel
         public string Phone { get; set; } = string.Empty;
         public int DepartmentId { get; set; }
         public Department Department { get; set; }
+        public Role Role { get; set; }
+        public int RoleId { get; set; }
     }
 }

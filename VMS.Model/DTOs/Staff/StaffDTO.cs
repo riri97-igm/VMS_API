@@ -13,5 +13,6 @@ namespace VMS.Model.DTOs.Staff
         public string Email { get; set; } = string.Empty;
         public string Phone {  get; set; } = string.Empty;
         public int DepartmetId { get; set; }
+        public int RoleId { get; set; }
     }
 }

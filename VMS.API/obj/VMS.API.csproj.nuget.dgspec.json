@@ -408,7 +408,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj": {
+                "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

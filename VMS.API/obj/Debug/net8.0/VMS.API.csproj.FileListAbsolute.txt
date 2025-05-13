@@ -152,3 +152,4 @@ D:\OJT\VMS\VMS.API\VMS.API\obj\Debug\net8.0\refint\VMS.API.dll
 D:\OJT\VMS\VMS.API\VMS.API\obj\Debug\net8.0\VMS.API.pdb
 D:\OJT\VMS\VMS.API\VMS.API\obj\Debug\net8.0\VMS.API.genruntimeconfig.cache
 D:\OJT\VMS\VMS.API\VMS.API\obj\Debug\net8.0\ref\VMS.API.dll
+D:\OJT\VMS\VMS.API\VMS.API\obj\Debug\net8.0\VMS.API.sourcelink.json

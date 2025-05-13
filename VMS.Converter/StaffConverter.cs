@@ -10,15 +10,16 @@ namespace VMS.Converter
 {
     public static class StaffConverter
     {
-        public static StaffDTO toStaffDTO(StaffDTO staff)
+        public static StaffDTO ToStaffDTO(Staff staff)
         {
-            return new StaffDTO()
+            return new StaffDTO
             {
                 Id = staff.Id,
                 Name = staff.Name,
                 Email = staff.Email,
                 Phone = staff.Phone,
-                DepartmetId = staff.DepartmetId
+                DepartmetId = staff.DepartmentId,
+                RoleId = staff.RoleId
             };
         }
 
@@ -30,7 +31,8 @@ namespace VMS.Converter
                 Name = staffDto.Name,
                 Email = staffDto.Email,
                 Phone = staffDto.Phone,
-                DepartmentId = staffDto.DepartmetId
+                DepartmentId = staffDto.DepartmetId,
+                RoleId = staffDto.RoleId
             };
         }
 
@@ -43,7 +45,10 @@ namespace VMS.Converter
                 Email = staff.Email,
                 Phone = staff.Phone,
                 DepartmetId = staff.DepartmentId,
-                DepartmentName = staff.Department?.Name ?? string.Empty
+                DepartmentName = staff.Department?.Name ?? string.Empty,
+                RoleName = staff.Role?.Name ?? string.Empty,
+                RoleId = staff.RoleId
+
             };
         }
     }

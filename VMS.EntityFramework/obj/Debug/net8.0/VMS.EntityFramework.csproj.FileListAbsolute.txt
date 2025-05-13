@@ -15,3 +15,4 @@ D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\refint\VMS.EntityFramewo
 D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.pdb
 D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.genruntimeconfig.cache
 D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\ref\VMS.EntityFramework.dll
+D:\OJT\VMS\VMS.API\VMS.EntityFramework\obj\Debug\net8.0\VMS.EntityFramework.sourcelink.json

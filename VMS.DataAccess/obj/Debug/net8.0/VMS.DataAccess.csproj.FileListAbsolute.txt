@@ -19,3 +19,4 @@ D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.dll
 D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\refint\VMS.DataAccess.dll
 D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.pdb
 D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\ref\VMS.DataAccess.dll
+D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.sourcelink.json
