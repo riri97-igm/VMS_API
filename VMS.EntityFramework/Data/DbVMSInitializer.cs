@@ -44,6 +44,7 @@ namespace VMS.EntityFramework.Data
                         var hrDept = context.Departments.First(d => d.Name == "Human Resources");
                         var itDept = context.Departments.First(d => d.Name == "IT Department");
 
+
                         context.Staffs.AddRange(
                             new Staff
                             {
@@ -67,7 +68,33 @@ namespace VMS.EntityFramework.Data
                 }
             }
 
-           
+            // Seed Visitors
+            if (!context.Visitors.Any())
+            {
+                context.Visitors.AddRange(
+                    new Visitor
+                    {
+                        FirstName = "Michael",
+                        LastName = "Johnson",
+                        Email = "michael.johnson@example.com",
+                        Phone = "555-123-4567",
+                        Company = "ABC Corp",
+                        IdentificationNumber = "ID12345"
+                    },
+                    new Visitor
+                    {
+                        FirstName = "Emma",
+                        LastName = "Brown",
+                        Email = "emma.brown@example.com",
+                        Phone = "555-987-6543",
+                        Company = "XYZ Ltd",
+                        IdentificationNumber = "ID67890"
+                    }
+                );
+                context.SaveChanges();
+            }
+
+
         }
     }
 }

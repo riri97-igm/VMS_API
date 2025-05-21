@@ -35,14 +35,14 @@ namespace VMS.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<int>> AddDepartment([FromBody]DepartmentDTO departmentDto)
+        public async Task<ActionResult<int>> AddDepartment(DepartmentDTO departmentDto)
         {
             var departmentId = await _departmentRepository.AddAsync(departmentDto);
             return CreatedAtAction(nameof(GetDepartmentById), new { id = departmentId }, departmentId);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateDepartment(int id,[FromBody]DepartmentDTO departmentDto)
+        public async Task<IActionResult> UpdateDepartment(int id,DepartmentDTO departmentDto)
         {
             if (id != departmentDto.Id)
             {

@@ -18,16 +18,48 @@ namespace VMS.DataAccess
         {
             _context = context;
         }
+        
         public async Task<IEnumerable<DepartmentDTO>> GetAllAsync()
         {
             var departments = await _context.Departments.ToListAsync();
-            return departments.Select(DepartmentConverter.ToDepartmentDTO);
+            var result = new List<DepartmentDTO>();
+            
+            foreach (var department in departments)
+            {
+                var dto = DepartmentConverter.ToDepartmentDTO(department);
+                
+                if (department.ChangedBy > 0)
+                {
+                    var staff = await _context.Staffs.FindAsync(department.ChangedBy);
+                    if (staff != null)
+                    {
+                        dto.ChangedByName = staff.Name;
+                    }
+                }
+                
+                result.Add(dto);
+            }
+            
+            return result;
         }
 
         public async Task<DepartmentDTO?> GetByIdAsync(int id)
         {
             var department = await _context.Departments.FindAsync(id);
-            return department == null ? null : DepartmentConverter.ToDepartmentDTO(department);
+            if (department == null) return null;
+            
+            var dto = DepartmentConverter.ToDepartmentDTO(department);
+            
+            if (department.ChangedBy > 0)
+            {
+                var staff = await _context.Staffs.FindAsync(department.ChangedBy);
+                if (staff != null)
+                {
+                    dto.ChangedByName = staff.Name;
+                }
+            }
+            
+            return dto;
         }
 
         public async Task<int> AddAsync(DepartmentDTO departmentDto)
@@ -42,14 +74,32 @@ namespace VMS.DataAccess
         {
             var department = await _context.Departments.FindAsync(departmentDto.Id);
             if (department == null) return;
+            
             department.Name = departmentDto.Name;
+            department.ChangedBy = departmentDto.ChangedBy;
+            
             await _context.SaveChangesAsync();
+            
+            // Update the ChangedByName in the DTO for the response
+            if (departmentDto.ChangedBy > 0)
+            {
+                var staff = await _context.Staffs.FindAsync(departmentDto.ChangedBy);
+                if (staff != null)
+                {
+                    departmentDto.ChangedByName = staff.Name;
+                }
+            }
         }
 
         public async Task DeleteAsync(int id, int changedBy)
         {
             var department = await _context.Departments.FindAsync(id);
             if (department == null) return;
+            
+            // Instead of removing the department, we could update its ChangedBy field
+            // before deletion if that's part of your audit trail requirements
+            department.ChangedBy = changedBy;
+            
             _context.Departments.Remove(department);
             await _context.SaveChangesAsync();
         }

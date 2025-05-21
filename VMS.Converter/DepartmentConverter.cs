@@ -16,15 +16,16 @@ namespace VMS.Converter
             {
                 Id = department.Id,
                 Name = department.Name,
+                ChangedBy = department.ChangedBy
             };
         }
-
-        public static Department ToDepartmentEntity (DepartmentDTO departmentDto) 
+        public static Department ToDepartmentEntity(DepartmentDTO departmentDto) 
         {
             return new Department
             {
                 Id = departmentDto.Id,
                 Name = departmentDto.Name,
+                ChangedBy = departmentDto.ChangedBy
             };
         }
     }

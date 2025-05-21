@@ -9,6 +9,7 @@ namespace VMS.EntityFramework.EntityModel
     public class Department
     {
         public int Id { get; set; }
-        public string Name { get; set; } = string.Empty;    
+        public string Name { get; set; } = string.Empty;
+        public int ChangedBy { get; set; }
     }
 }
