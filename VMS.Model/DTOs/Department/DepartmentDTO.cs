@@ -1,4 +1,22 @@
-﻿using System;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+//namespace VMS.Model.DTOs
+//{
+//    public class DepartmentDTO
+//    {
+//        public int Id {  get; set; }
+//        public string Name { get; set; } = string.Empty;
+//        public int ChangedBy { get; set; }
+//        public string ChangedByName { get; set; } = string.Empty;
+//    }
+//}
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +26,7 @@ namespace VMS.Model.DTOs
 {
     public class DepartmentDTO
     {
-        public int Id {  get; set; }
+        public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public int ChangedBy { get; set; }
         public string ChangedByName { get; set; } = string.Empty;

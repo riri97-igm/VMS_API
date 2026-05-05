@@ -436,14 +436,7 @@
           }
         }
       },
-      "System.Formats.Asn1/8.0.2": {
-        "runtime": {
-          "lib/net8.0/System.Formats.Asn1.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1325.6609"
-          }
-        }
-      },
+      "System.Formats.Asn1/8.0.2": {},
       "System.IdentityModel.Tokens.Jwt/6.35.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
@@ -571,7 +564,10 @@
       },
       "VMS.Common/1.0.0": {
         "runtime": {
-          "VMS.Common.dll": {}
+          "VMS.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "VMS.Converter/1.0.0": {
@@ -580,7 +576,10 @@
           "VMS.Model": "1.0.0"
         },
         "runtime": {
-          "VMS.Converter.dll": {}
+          "VMS.Converter.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "VMS.EntityFramework/1.0.0": {
@@ -591,7 +590,10 @@
           "VMS.Common": "1.0.0"
         },
         "runtime": {
-          "VMS.EntityFramework.dll": {}
+          "VMS.EntityFramework.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "VMS.Model/1.0.0": {
@@ -599,7 +601,10 @@
           "VMS.Common": "1.0.0"
         },
         "runtime": {
-          "VMS.Model.dll": {}
+          "VMS.Model.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

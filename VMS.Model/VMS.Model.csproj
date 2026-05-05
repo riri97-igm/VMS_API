@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="DTOs\Department\DepartmentDetailsDTO.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\VMS.Common\VMS.Common.csproj" />
   </ItemGroup>
 

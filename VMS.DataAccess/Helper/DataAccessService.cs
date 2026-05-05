@@ -1,26 +1,54 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿//using Microsoft.Extensions.Configuration;
+//using Microsoft.Extensions.DependencyInjection;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//using VMS.DataAccess;
+//using VMS.DataAccess.Implementation;
+//using VMS.DataAccess.Interface;
+
+
+//namespace VMS.DataAccess.Helper
+//{
+//    public class DataAccessService
+//    {
+//        public static void ConfigureServices(
+//            IServiceCollection services,
+//            IConfiguration Configuration
+//        )
+//        {
+//            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+//            services.AddScoped<IStaffRepository, StaffRepository>();
+//            services.AddScoped<IRoleRepository, RoleRepository>();
+//            services.AddScoped<IVisitorRepository, VisitorRepository>();
+//            services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+//            services.AddScoped<ILoginRepository, LoginRepository>();
+//        }
+//    }
+//}
+
+
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VMS.DataAccess;
 using VMS.DataAccess.Implementation;
 using VMS.DataAccess.Interface;
-
 
 namespace VMS.DataAccess.Helper
 {
     public class DataAccessService
     {
-        public static void ConfigureServices(
-            IServiceCollection services,
-            IConfiguration Configuration
-        )
+        public static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddScoped<IStaffRepository, StaffRepository>();
+            services.AddScoped<IVisitorRepository, VisitorRepository>();
+            services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+            services.AddScoped<IVisitorLogRepository, VisitorLogRepository>();
+            services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IAuthRepository, AuthRepository>();
         }
     }
 }
+

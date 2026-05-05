@@ -16,7 +16,10 @@
       },
       "VMS.Common/1.0.0": {
         "runtime": {
-          "VMS.Common.dll": {}
+          "VMS.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

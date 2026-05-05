@@ -66,6 +66,10 @@ namespace VMS.EntityFramework.Migrations
                     b.Property<int>("ChangedBy")
                         .HasColumnType("int");
 
+                    b.Property<string>("ChangedByName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -113,6 +117,14 @@ namespace VMS.EntityFramework.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("PasswordSalt")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<string>("Phone")
                         .IsRequired()
@@ -172,6 +184,46 @@ namespace VMS.EntityFramework.Migrations
                     b.ToTable("Visitors");
                 });
 
+            modelBuilder.Entity("VMS.EntityFramework.EntityModel.VisitorLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("AppointmentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ChangedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CheckInTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("CheckOutTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Remarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StaffId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VisitorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppointmentId");
+
+                    b.HasIndex("StaffId");
+
+                    b.HasIndex("VisitorId");
+
+                    b.ToTable("VisitorLogs");
+                });
+
             modelBuilder.Entity("VMS.EntityFramework.EntityModel.Appointment", b =>
                 {
                     b.HasOne("VMS.EntityFramework.EntityModel.Staff", "Staff")
@@ -208,6 +260,31 @@ namespace VMS.EntityFramework.Migrations
                     b.Navigation("Department");
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("VMS.EntityFramework.EntityModel.VisitorLog", b =>
+                {
+                    b.HasOne("VMS.EntityFramework.EntityModel.Appointment", "Appointment")
+                        .WithMany()
+                        .HasForeignKey("AppointmentId");
+
+                    b.HasOne("VMS.EntityFramework.EntityModel.Staff", "Staff")
+                        .WithMany()
+                        .HasForeignKey("StaffId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("VMS.EntityFramework.EntityModel.Visitor", "Visitor")
+                        .WithMany()
+                        .HasForeignKey("VisitorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Appointment");
+
+                    b.Navigation("Staff");
+
+                    b.Navigation("Visitor");
                 });
 
             modelBuilder.Entity("VMS.EntityFramework.EntityModel.Role", b =>

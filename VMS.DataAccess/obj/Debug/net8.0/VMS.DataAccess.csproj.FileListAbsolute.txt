@@ -14,9 +14,9 @@ D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.GeneratedMSBui
 D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.AssemblyInfoInputs.cache
 D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.AssemblyInfo.cs
 D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.csproj.CoreCompileInputs.cache
-D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.csproj.CopyComplete
+D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.sourcelink.json
+D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.Data.0FA195D4.Up2Date
 D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.dll
 D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\refint\VMS.DataAccess.dll
 D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.pdb
 D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\ref\VMS.DataAccess.dll
-D:\OJT\VMS\VMS.API\VMS.DataAccess\obj\Debug\net8.0\VMS.DataAccess.sourcelink.json
