@@ -23,7 +23,7 @@ jobs:
       - name: Deploy over native SSH
         env:
           APP_PATH: /var/www/ingyin-api
-          APPSETTINGS_SOURCE: c/appsettings.json
+          APPSETTINGS_SOURCE: /var/www/ingyin-secrets/appsettings.json
           BRANCH: ${{ github.ref_name }}
           DO_HOST: ${{ secrets.DO_HOST }}
           DO_USERNAME: ${{ secrets.DO_USERNAME }}
