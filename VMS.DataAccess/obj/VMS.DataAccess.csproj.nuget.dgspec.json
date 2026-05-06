@@ -1,0 +1,407 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.DataAccess/VMS.DataAccess.csproj": {}
+  },
+  "projects": {
+    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj",
+        "projectName": "VMS.Common",
+        "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj",
+        "packagesPath": "/Users/ywaychitaung/.nuget/packages/",
+        "outputPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ywaychitaung/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/VMS.Converter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/VMS.Converter.csproj",
+        "projectName": "VMS.Converter",
+        "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/VMS.Converter.csproj",
+        "packagesPath": "/Users/ywaychitaung/.nuget/packages/",
+        "outputPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ywaychitaung/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj": {
+                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj"
+              },
+              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj": {
+                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.DataAccess/VMS.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.DataAccess/VMS.DataAccess.csproj",
+        "projectName": "VMS.DataAccess",
+        "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.DataAccess/VMS.DataAccess.csproj",
+        "packagesPath": "/Users/ywaychitaung/.nuget/packages/",
+        "outputPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.DataAccess/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ywaychitaung/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj": {
+                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj"
+              },
+              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/VMS.Converter.csproj": {
+                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/VMS.Converter.csproj"
+              },
+              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj": {
+                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj"
+              },
+              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj": {
+                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj",
+        "projectName": "VMS.EntityFramework",
+        "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj",
+        "packagesPath": "/Users/ywaychitaung/.nuget/packages/",
+        "outputPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ywaychitaung/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj": {
+                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj",
+        "projectName": "VMS.Model",
+        "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj",
+        "packagesPath": "/Users/ywaychitaung/.nuget/packages/",
+        "outputPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ywaychitaung/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj": {
+                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
