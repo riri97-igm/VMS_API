@@ -40,6 +40,20 @@ namespace VMS.EntityFramework.Migrations
                     WHERE TABLE_NAME = 'Departments' AND COLUMN_NAME = 'ChangedByName'
                 )
                 BEGIN
+                    DECLARE @dfName nvarchar(128);
+                    SELECT @dfName = dc.name
+                    FROM sys.default_constraints dc
+                    INNER JOIN sys.columns c
+                        ON c.default_object_id = dc.object_id
+                    INNER JOIN sys.tables t
+                        ON t.object_id = c.object_id
+                    WHERE t.name = 'Departments' AND c.name = 'ChangedByName';
+
+                    IF @dfName IS NOT NULL
+                    BEGIN
+                        EXEC('ALTER TABLE [Departments] DROP CONSTRAINT [' + @dfName + ']');
+                    END
+
                     ALTER TABLE [Departments] DROP COLUMN [ChangedByName]
                 END
             ");
@@ -93,7 +107,7 @@ namespace VMS.EntityFramework.Migrations
                         CONSTRAINT [FK_VisitorLogs_Staffs_StaffId]
                             FOREIGN KEY ([StaffId]) REFERENCES [Staffs]([Id]),
                         CONSTRAINT [FK_VisitorLogs_Appointments_AppointmentId]
-                            FOREIGN KEY ([AppointmentId]) REFERENCES [Appointments]([Id]) ON DELETE SET NULL
+                            FOREIGN KEY ([AppointmentId]) REFERENCES [Appointments]([Id]) ON DELETE NO ACTION
                     );
                     CREATE INDEX [IX_VisitorLogs_VisitorId]     ON [VisitorLogs]([VisitorId]);
                     CREATE INDEX [IX_VisitorLogs_StaffId]       ON [VisitorLogs]([StaffId]);
