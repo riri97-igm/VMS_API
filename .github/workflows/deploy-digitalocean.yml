@@ -24,11 +24,13 @@ jobs:
         env:
           APP_PATH: /var/www/ingyin-api
           APPSETTINGS_SOURCE: /var/www/ingyin-secrets/appsettings.json
+          APPSETTINGS_PRODUCTION_SOURCE: /var/www/ingyin-secrets/appsettings.Production.json
           BRANCH: ${{ github.ref_name }}
           DO_HOST: ${{ secrets.DO_HOST }}
           DO_USERNAME: ${{ secrets.DO_USERNAME }}
           DO_PORT: ${{ secrets.DO_PORT }}
-          SERVICE_NAME: ${{ secrets.DO_SYSTEMD_SERVICE }}
+          SERVICE_NAME: ${{ secrets.DO_SYSTEMD_SERVICE || 'vms-api.service' }}
+          SERVICE_USER: ${{ secrets.DO_SERVICE_USER }}
         run: |
           set -euo pipefail
           : "${DO_HOST:?DO_HOST secret is required}"
@@ -53,7 +55,9 @@ jobs:
             exit 1
           fi
           sudo cp "$APPSETTINGS_SOURCE" "$APP_PATH/VMS.API/appsettings.json"
-          sudo chmod 600 "$APP_PATH/VMS.API/appsettings.json"
+          if [ -f "$APPSETTINGS_PRODUCTION_SOURCE" ]; then
+            sudo cp "$APPSETTINGS_PRODUCTION_SOURCE" "$APP_PATH/VMS.API/appsettings.Production.json"
+          fi
 
           mkdir -p "$APP_PATH/publish"
           dotnet --info
@@ -61,10 +65,22 @@ jobs:
           dotnet build VMS.API.sln -c Release --no-restore
           dotnet publish VMS.API/VMS.API.csproj -c Release --no-build -o "$APP_PATH/publish"
 
-          if [ -n "${SERVICE_NAME:-}" ]; then
-            sudo systemctl restart "$SERVICE_NAME"
-            sudo systemctl status "$SERVICE_NAME" --no-pager
-          else
-            echo "DO_SYSTEMD_SERVICE is not set. Skipping service restart."
+          # Ensure runtime config is deployed and readable by the service user.
+          sudo cp "$APPSETTINGS_SOURCE" "$APP_PATH/publish/appsettings.json"
+          if [ -f "$APPSETTINGS_PRODUCTION_SOURCE" ]; then
+            sudo cp "$APPSETTINGS_PRODUCTION_SOURCE" "$APP_PATH/publish/appsettings.Production.json"
           fi
+          if [ -z "${SERVICE_USER:-}" ]; then
+            SERVICE_USER="$(sudo systemctl show -p User --value "$SERVICE_NAME" || true)"
+          fi
+          SERVICE_USER="${SERVICE_USER:-www-data}"
+          sudo chown root:"$SERVICE_USER" "$APP_PATH/publish/appsettings.json"
+          sudo chmod 640 "$APP_PATH/publish/appsettings.json"
+          if [ -f "$APP_PATH/publish/appsettings.Production.json" ]; then
+            sudo chown root:"$SERVICE_USER" "$APP_PATH/publish/appsettings.Production.json"
+            sudo chmod 640 "$APP_PATH/publish/appsettings.Production.json"
+          fi
+
+          sudo systemctl restart "$SERVICE_NAME"
+          sudo systemctl status "$SERVICE_NAME" --no-pager
           EOF
