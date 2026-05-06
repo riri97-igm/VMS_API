@@ -1,0 +1,58 @@
+name: Deploy to DigitalOcean
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configure SSH key
+        env:
+          DO_SSH_KEY: ${{ secrets.DO_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          printf "%s\n" "$DO_SSH_KEY" > ~/.ssh/do_key
+          chmod 600 ~/.ssh/do_key
+
+      - name: Deploy over native SSH
+        env:
+          APP_PATH: /var/www/ingyin-api
+          BRANCH: ${{ github.ref_name }}
+          DO_HOST: ${{ secrets.DO_HOST }}
+          DO_USERNAME: ${{ secrets.DO_USERNAME }}
+          DO_PORT: ${{ secrets.DO_PORT }}
+          SERVICE_NAME: ${{ secrets.DO_SYSTEMD_SERVICE }}
+        run: |
+          set -euo pipefail
+          : "${DO_HOST:?DO_HOST secret is required}"
+          : "${DO_USERNAME:?DO_USERNAME secret is required}"
+          DO_PORT="${DO_PORT:-22}"
+
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/do_key -p "$DO_PORT" "$DO_USERNAME@$DO_HOST" <<EOF
+          set -euo pipefail
+
+          cd "$APP_PATH"
+
+          # Ensure deploy target exactly matches remote branch, even after force-pushes.
+          git fetch origin "$BRANCH" --prune
+          git reset --hard
+          git clean -fdx
+          git checkout -B "$BRANCH" "origin/$BRANCH"
+          git reset --hard "origin/$BRANCH"
+
+          dotnet restore
+          dotnet publish VMS.API/VMS.API.csproj -c Release -o "$APP_PATH/publish"
+
+          if [ -n "${SERVICE_NAME:-}" ]; then
+            sudo systemctl restart "$SERVICE_NAME"
+            sudo systemctl status "$SERVICE_NAME" --no-pager
+          else
+            echo "DO_SYSTEMD_SERVICE is not set. Skipping service restart."
+          fi
+          EOF

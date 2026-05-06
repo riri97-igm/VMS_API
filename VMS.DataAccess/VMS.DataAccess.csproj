@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VMS.Common\VMS.Common.csproj" />
+    <ProjectReference Include="..\VMS.Converter\VMS.Converter.csproj" />
+    <ProjectReference Include="..\VMS.EntityFramework\VMS.EntityFramework.csproj" />
+    <ProjectReference Include="..\VMS.Model\VMS.Model.csproj" />
+  </ItemGroup>
+
+</Project>

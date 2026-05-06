@@ -1,0 +1,34 @@
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+//namespace VMS.EntityFramework.EntityModel
+//{
+//    public class Department
+//    {
+//        public int Id { get; set; }
+//        public string Name { get; set; } = string.Empty;
+//        public int ChangedBy { get; set; }
+//        public string ChangedByName { get; set; } = string.Empty;  
+//    }
+//}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace VMS.EntityFramework.EntityModel
+{
+    public class Department
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public int ChangedBy { get; set; }
+        public string ChangedByName { get; set; } = string.Empty;
+    }
+}
