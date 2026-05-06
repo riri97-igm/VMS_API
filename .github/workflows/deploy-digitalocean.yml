@@ -23,6 +23,7 @@ jobs:
       - name: Deploy over native SSH
         env:
           APP_PATH: /var/www/ingyin-api
+          APPSETTINGS_SOURCE: /var/www/ingyin-secrets/appsettings.json
           BRANCH: ${{ github.ref_name }}
           DO_HOST: ${{ secrets.DO_HOST }}
           DO_USERNAME: ${{ secrets.DO_USERNAME }}
@@ -45,6 +46,14 @@ jobs:
           git clean -fdx
           git checkout -B "$BRANCH" "origin/$BRANCH"
           git reset --hard "origin/$BRANCH"
+
+          # Restore server-only settings after syncing repository.
+          if [ ! -f "$APPSETTINGS_SOURCE" ]; then
+            echo "Missing appsettings source: $APPSETTINGS_SOURCE"
+            exit 1
+          fi
+          sudo cp "$APPSETTINGS_SOURCE" "$APP_PATH/VMS.API/appsettings.json"
+          sudo chmod 600 "$APP_PATH/VMS.API/appsettings.json"
 
           dotnet restore
           dotnet publish VMS.API/VMS.API.csproj -c Release -o "$APP_PATH/publish"
