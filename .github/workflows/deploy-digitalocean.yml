@@ -23,7 +23,7 @@ jobs:
       - name: Deploy over native SSH
         env:
           APP_PATH: /var/www/ingyin-api
-          APPSETTINGS_SOURCE: /var/www/ingyin-secrets/appsettings.json
+          APPSETTINGS_SOURCE: c/appsettings.json
           BRANCH: ${{ github.ref_name }}
           DO_HOST: ${{ secrets.DO_HOST }}
           DO_USERNAME: ${{ secrets.DO_USERNAME }}
@@ -55,8 +55,11 @@ jobs:
           sudo cp "$APPSETTINGS_SOURCE" "$APP_PATH/VMS.API/appsettings.json"
           sudo chmod 600 "$APP_PATH/VMS.API/appsettings.json"
 
-          dotnet restore
-          dotnet publish VMS.API/VMS.API.csproj -c Release -o "$APP_PATH/publish"
+          mkdir -p "$APP_PATH/publish"
+          dotnet --info
+          dotnet restore VMS.API.sln
+          dotnet build VMS.API.sln -c Release --no-restore
+          dotnet publish VMS.API/VMS.API.csproj -c Release --no-build -o "$APP_PATH/publish"
 
           if [ -n "${SERVICE_NAME:-}" ]; then
             sudo systemctl restart "$SERVICE_NAME"
