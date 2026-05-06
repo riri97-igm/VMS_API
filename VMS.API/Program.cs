@@ -1,3 +1,89 @@
+<<<<<<< HEAD
+=======
+//using Microsoft.AspNetCore.Authentication.JwtBearer;
+//using Microsoft.Extensions.Options;
+//using Microsoft.IdentityModel.Tokens;
+//using Microsoft.OpenApi.Models;
+//using System.Text;
+//using VMS.API.Helper.ServiceExtensions;
+
+//var builder = WebApplication.CreateBuilder(args);
+
+//// Add services to the container.
+
+//const string policyName = "CorsPolicy";
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy(name: policyName, builder =>
+//    {
+//        builder.AllowAnyOrigin()
+//            .AllowAnyHeader()
+//            .AllowAnyMethod();
+//    });
+//});
+
+//// Commented out JWT authentication configuration
+///*
+//    var key = builder.Configuration["Jwt:Key"];
+//    builder.Services.AddAuthentication(options =>
+//    {
+//        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+//        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+//    })
+//    .AddJwtBearer(options =>
+//    {
+//        options.TokenValidationParameters = new TokenValidationParameters
+//        {
+//            ValidateIssuer = true,
+//            ValidateAudience = true,
+//            ValidateLifetime = true,
+//            ValidateIssuerSigningKey = true,
+//            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+//            ValidAudience = builder.Configuration["Jwt:Audience"],
+//            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("JWTAuthentication@777"))
+//        };
+//    });
+//*/
+
+//builder.Services.AddControllers();
+//// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+//builder.Services.AddEndpointsApiExplorer();
+//builder.Services.AddSwaggerGen();
+
+//ConfigHelper.ConfigureService(builder);
+//try
+//{
+//    var app = builder.Build();
+
+//    // Configure the HTTP request pipeline.
+//    if (app.Environment.IsDevelopment())
+//    {
+//        app.UseSwagger();
+//        app.UseSwaggerUI();
+//    }
+
+//    app.UseHttpsRedirection();
+
+//    app.UseCors(policyName);
+
+//    // Commented out JWT middleware
+//    // app.UseAuthentication();
+
+//    app.UseAuthorization();
+
+//    app.MapControllers();
+
+//    ConfigHelper.MigrateDatabase(app);
+
+//    app.Run();
+//}
+//catch(Exception ex)
+//{
+//    var f = ex.Message.ToString();
+//}
+
+
+>>>>>>> 31e87524baa9da70bb20cab8e78177a907295f30
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
