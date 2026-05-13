@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.DataAccess/VMS.DataAccess.csproj": {}
+    "D:\\OJT\\VMS\\VMS.API\\VMS.DataAccess\\VMS.DataAccess.csproj": {}
   },
   "projects": {
-    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj": {
+    "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj",
+        "projectUniqueName": "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj",
         "projectName": "VMS.Common",
-        "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj",
-        "packagesPath": "/Users/ywaychitaung/.nuget/packages/",
-        "outputPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/obj/",
+        "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj",
+        "packagesPath": "C:\\Users\\ingyi\\.nuget\\packages\\",
+        "outputPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/ywaychitaung/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ingyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -54,52 +60,48 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/VMS.Converter.csproj": {
+    "D:\\OJT\\VMS\\VMS.API\\VMS.Converter\\VMS.Converter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/VMS.Converter.csproj",
+        "projectUniqueName": "D:\\OJT\\VMS\\VMS.API\\VMS.Converter\\VMS.Converter.csproj",
         "projectName": "VMS.Converter",
-        "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/VMS.Converter.csproj",
-        "packagesPath": "/Users/ywaychitaung/.nuget/packages/",
-        "outputPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/obj/",
+        "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Converter\\VMS.Converter.csproj",
+        "packagesPath": "C:\\Users\\ingyi\\.nuget\\packages\\",
+        "outputPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Converter\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/ywaychitaung/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ingyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj": {
-                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj"
+              "D:\\OJT\\VMS\\VMS.API\\VMS.EntityFramework\\VMS.EntityFramework.csproj": {
+                "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.EntityFramework\\VMS.EntityFramework.csproj"
               },
-              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj": {
-                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj"
+              "D:\\OJT\\VMS\\VMS.API\\VMS.Model\\VMS.Model.csproj": {
+                "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Model\\VMS.Model.csproj"
               }
             }
           }
@@ -114,7 +116,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -130,58 +132,54 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.DataAccess/VMS.DataAccess.csproj": {
+    "D:\\OJT\\VMS\\VMS.API\\VMS.DataAccess\\VMS.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.DataAccess/VMS.DataAccess.csproj",
+        "projectUniqueName": "D:\\OJT\\VMS\\VMS.API\\VMS.DataAccess\\VMS.DataAccess.csproj",
         "projectName": "VMS.DataAccess",
-        "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.DataAccess/VMS.DataAccess.csproj",
-        "packagesPath": "/Users/ywaychitaung/.nuget/packages/",
-        "outputPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.DataAccess/obj/",
+        "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.DataAccess\\VMS.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\ingyi\\.nuget\\packages\\",
+        "outputPath": "D:\\OJT\\VMS\\VMS.API\\VMS.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/ywaychitaung/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ingyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj": {
-                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj"
+              "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj": {
+                "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj"
               },
-              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/VMS.Converter.csproj": {
-                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Converter/VMS.Converter.csproj"
+              "D:\\OJT\\VMS\\VMS.API\\VMS.Converter\\VMS.Converter.csproj": {
+                "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Converter\\VMS.Converter.csproj"
               },
-              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj": {
-                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj"
+              "D:\\OJT\\VMS\\VMS.API\\VMS.EntityFramework\\VMS.EntityFramework.csproj": {
+                "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.EntityFramework\\VMS.EntityFramework.csproj"
               },
-              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj": {
-                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj"
+              "D:\\OJT\\VMS\\VMS.API\\VMS.Model\\VMS.Model.csproj": {
+                "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Model\\VMS.Model.csproj"
               }
             }
           }
@@ -196,7 +194,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -212,49 +210,45 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj": {
+    "D:\\OJT\\VMS\\VMS.API\\VMS.EntityFramework\\VMS.EntityFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj",
+        "projectUniqueName": "D:\\OJT\\VMS\\VMS.API\\VMS.EntityFramework\\VMS.EntityFramework.csproj",
         "projectName": "VMS.EntityFramework",
-        "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/VMS.EntityFramework.csproj",
-        "packagesPath": "/Users/ywaychitaung/.nuget/packages/",
-        "outputPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.EntityFramework/obj/",
+        "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.EntityFramework\\VMS.EntityFramework.csproj",
+        "packagesPath": "C:\\Users\\ingyi\\.nuget\\packages\\",
+        "outputPath": "D:\\OJT\\VMS\\VMS.API\\VMS.EntityFramework\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/ywaychitaung/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ingyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj": {
-                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj"
+              "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj": {
+                "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj"
               }
             }
           }
@@ -269,7 +263,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -311,49 +305,45 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj": {
+    "D:\\OJT\\VMS\\VMS.API\\VMS.Model\\VMS.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj",
+        "projectUniqueName": "D:\\OJT\\VMS\\VMS.API\\VMS.Model\\VMS.Model.csproj",
         "projectName": "VMS.Model",
-        "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/VMS.Model.csproj",
-        "packagesPath": "/Users/ywaychitaung/.nuget/packages/",
-        "outputPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Model/obj/",
+        "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Model\\VMS.Model.csproj",
+        "packagesPath": "C:\\Users\\ingyi\\.nuget\\packages\\",
+        "outputPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/ywaychitaung/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ingyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj": {
-                "projectPath": "/Users/ywaychitaung/Desktop/Projects/ingyin/VMS_API/VMS.Common/VMS.Common.csproj"
+              "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj": {
+                "projectPath": "D:\\OJT\\VMS\\VMS.API\\VMS.Common\\VMS.Common.csproj"
               }
             }
           }
@@ -368,7 +358,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -384,22 +374,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

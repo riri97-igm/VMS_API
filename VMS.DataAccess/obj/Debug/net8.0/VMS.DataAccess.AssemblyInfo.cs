@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VMS.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fc39542fc6c64a576a4a96a107ccc05be626e06")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+327f95c6546530d868b5c9fec46f587c575d5466")]
 [assembly: System.Reflection.AssemblyProductAttribute("VMS.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VMS.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

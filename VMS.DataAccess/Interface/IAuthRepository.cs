@@ -1,20 +1,4 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using VMS.EntityFramework.EntityModel;
-
-//namespace VMS.DataAccess.Interface
-//{
-//    public interface ILoginRepository
-//    {
-//        Task<Login> GetByUserNameAndPasswordAsync(string userName, string password);
-//    }
-//}
-
-
-using VMS.Model.DTOs.Auth;
+﻿using VMS.Model.DTOs.Auth;
 
 namespace VMS.DataAccess.Interface
 {
