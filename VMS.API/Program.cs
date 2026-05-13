@@ -76,3 +76,4 @@ app.MapControllers();
 ConfigHelper.MigrateDatabase(app);
 
 app.Run();
+app.Run();
