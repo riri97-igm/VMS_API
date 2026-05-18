@@ -9,7 +9,6 @@ namespace VMS.EntityFramework.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-<<<<<<< HEAD
             // Drop default constraint on ChangedByName BEFORE dropping the column
             migrationBuilder.Sql(
                 "DECLARE @con NVARCHAR(256);" +
@@ -28,7 +27,6 @@ namespace VMS.EntityFramework.Migrations
                 "    WHERE TABLE_NAME = 'Departments' AND COLUMN_NAME = 'ChangedByName'" +
                 ") ALTER TABLE [Departments] DROP COLUMN [ChangedByName];"
             );
-=======
             // Drop ChangedByName from Departments if it exists
             migrationBuilder.Sql(@"
                 IF EXISTS (
@@ -53,7 +51,6 @@ namespace VMS.EntityFramework.Migrations
                     ALTER TABLE [Departments] DROP COLUMN [ChangedByName]
                 END
             ");
->>>>>>> 54b492ec9b324349f7ad530acd422e0b79b45847
 
             // Drop Logins table if it exists
             migrationBuilder.Sql(
@@ -78,7 +75,6 @@ namespace VMS.EntityFramework.Migrations
             );
 
             // Create VisitorLogs table
-<<<<<<< HEAD
             // FK to Appointments uses NO ACTION to avoid cascade cycle:
             // VisitorLogs->Visitors (CASCADE) + VisitorLogs->Appointments->Visitors = multiple paths
             migrationBuilder.Sql(
@@ -103,7 +99,6 @@ namespace VMS.EntityFramework.Migrations
                 "    CREATE INDEX [IX_VisitorLogs_AppointmentId] ON [VisitorLogs]([AppointmentId]);" +
                 "END"
             );
-=======
             migrationBuilder.Sql(@"
                 IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'VisitorLogs')
                 BEGIN
@@ -129,7 +124,6 @@ namespace VMS.EntityFramework.Migrations
                     CREATE INDEX [IX_VisitorLogs_AppointmentId] ON [VisitorLogs]([AppointmentId]);
                 END
             ");
->>>>>>> 54b492ec9b324349f7ad530acd422e0b79b45847
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
